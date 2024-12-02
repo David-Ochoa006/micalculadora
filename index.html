@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="miscript.js" defer></script>
+    <title>Calculadora</title>
+</head>
+<body>
+    <div class="container">
+        <div class="calculadora">
+            <div class="display">
+            <div id="historial" class="historiales"></div>
+            <div id="valor" class="valores">0</div>
+            
+        </div>
+        <div class="botones">
+            <button class="operadorgrad" onclick="limpiarValor('borartodo')">C</button>
+            <button class="operador" onclick="borrarUltimo('borrar')">&lAarr;</button>
+            <button class="operador" onclick="agregarvalor('/')">/</button>
+            <button class="numero" onclick="agregarvalor('7')">7</button>
+            <button class="numero" onclick="agregarvalor('8')">8</button>
+            <button class="numero" onclick="agregarvalor('9')">9</button>
+            <button class="operador" onclick="agregarvalor('*')">*</button>
+            <button class="numero" onclick="agregarvalor('4')">4</button>
+            <button class="numero" onclick="agregarvalor('5')">5</button>
+            <button class="numero" onclick="agregarvalor('6')">6</button>
+            <button class="operador" onclick="agregarvalor('+')">+</button>
+            <button class="numero" onclick="agregarvalor('1')">1</button>
+            <button class="numero" onclick="agregarvalor('2')">2</button>
+            <button class="numero" onclick="agregarvalor('3')">3</button>
+            <button class="operador" onclick="agregarvalor('+')">+</button>
+            <button class="numero" onclick="agregarvalor('0')">0</button>
+            <button class="numero" onclick="agregarvalor('00')">00</button>
+            <button class="operador" onclick="agregarvalor('.')">.</button>
+            <button class="operador" onclick="calcular('=')">=</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
